@@ -1,51 +1,70 @@
-     * {
-            color: azure;
-        }
+* {
+    color: azure;
+}
 
-        body{
-            min-height: 100vh;
-            /* background: linear-gradient(25deg, rgba(0, 0, 0, 0.871), rgba(1, 14, 79, 0.934), rgba(58, 110, 241, 0.74)); */
-            background-color: rgba(0, 0, 0, 0.9);
-        }
+body {
+    min-height: 100vh;
+    /* background: linear-gradient(25deg, rgba(0, 0, 0, 0.871), rgba(1, 14, 79, 0.934), rgba(58, 110, 241, 0.74)); */
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
-        .col-right,
-        .col-left {
-            min-height: 80vh;
-        }
+.col-right,
+.col-left {
+    min-height: 80vh;
+}
 
-        img {
-            clip-path: circle(42%);
-            filter: saturate(55%);
-        }
+img {
+    clip-path: circle(42%);
+    filter: saturate(55%);
+}
 
-        @keyframes floatAnimation {
-            0% {
-                transform: translateY(0);
-            }
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
 
-            50% {
-                transform: translateY(-30px);
-            }
+    50% {
+        transform: translateY(-30px);
+    }
 
-            100% {
-                transform: translateY(0);
-            }
-        }
+    100% {
+        transform: translateY(0);
+    }
+}
 
-        .container-logo {
-            max-width: 75%;
-        }
+.container-logo {
+    max-width: 75%;
+}
 
-        .animation img {
-            animation: floatAnimation 5s ease-in-out infinite;
-        }
+.animation img {
+    animation: floatAnimation 5s ease-in-out infinite;
+}
 
-        .btn {
-            min-width: 35%;
-            color: white;
-        }
+.btn {
+    min-width: 35%;
+    color: white;
+}
 
-        .btn:hover {
-            background-color: rgb(255, 74, 74) !important;
-            box-shadow: 0px 0px 0.5px .7px white;
-        }
+.btn:hover {
+    background-color: rgb(255, 74, 74) !important;
+    box-shadow: 0px 0px 0.5px .7px white;
+}
+
+
+
+@media (max-width: 992px) {
+
+    * {
+        font-size: small;
+        padding: 5px;
+    }  
+
+    img {
+            width: 35vb;
+    }
+
+    .col-left {
+        margin-top: -15px;
+    }
+    
+}
