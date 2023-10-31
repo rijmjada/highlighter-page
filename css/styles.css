@@ -4,8 +4,6 @@
 
 body {
     min-height: 100vh;
-    /* background: linear-gradient(25deg, rgba(0, 0, 0, 0.871), rgba(1, 14, 79, 0.934), rgba(58, 110, 241, 0.74)); */
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .col-right,
@@ -13,7 +11,7 @@ body {
     min-height: 80vh;
 }
 
-img {
+#img-logo {
     clip-path: circle(42%);
     filter: saturate(55%);
 }
@@ -51,7 +49,7 @@ img {
 }
 
 .main {
-    min-height: 85vh;
+    height: 100vh;
 }
 
 
@@ -61,16 +59,16 @@ img {
     * {
         font-size: small;
         padding: 5px;
-    }  
+    }
 
     img {
-            width: 35vb;
+        width: 35vb;
     }
 
     .col-left {
         margin-top: -15px;
     }
-    
+
 }
 
 footer p {
@@ -80,4 +78,99 @@ footer p {
 
 #linkLinked {
     font-size: x-small;
+}
+
+
+.custom-shape-divider-bottom-1698760107 {
+    position: absolute;
+    top: -38px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698760107 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 25px);
+    height: 39px;
+}
+
+.custom-shape-divider-bottom-1698760107 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+#img-screenshot {
+    box-shadow: 5px  0px  15px 2px  rgba(0, 0, 0, 0.679);
+    max-width: 65vh;
+}
+
+.img-logo {
+    width: 80%;
+    opacity: .9;
+    filter: drop-shadow(0 0 5rem rgb(20, 220, 217));
+    
+}
+
+.animation img {
+    animation: floatAnimation 5s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.custom-shape-divider-bottom-1698760107 {
+    position: absolute;
+    top: -38px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698760107 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 25px);
+    height: 39px;
+}
+
+.custom-shape-divider-bottom-1698760107 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.second-section {
+    position: relative;
+    padding-top: 150px;
+    background-color: white !important;
+    color: black !important;
+}
+
+
+#img-screenshot {
+    box-shadow: 5px 0px 15px 2px rgba(0, 0, 0, 0.679);
+    border-radius: 8px;
+    width: 100%;
 }
