@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        .row {
+            height: 100vh;
+        }
+
+        .imgs-colums {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            color: rgba(245, 245, 245, 0.828);
+            padding-bottom: 65px;
+            user-select: none;
+            /* Evita la selección de texto */
+            transition: all .5s ease;
+
+        }
+
+        .imgs-colums:hover {
+            background-size: 118%;
+            cursor: pointer;
+        }
+
+        #img-1 {
+            background-image: url(img-temp/1.jpg);
+        }
+
+        #img-2 {
+            background-image: url(img-temp/2.jpg);
+        }
+
+        #img-3 {
+            background-image: url(img-temp/3.jpg);
+        }
+
+        #img-4 {
+            background-image: url(img-temp/4.jpg);
+        }
+
+
+        .img-hover {
+            transition: opacity 0.3s;
+        }
+
+        .img-opaque {
+            opacity: 0.5;
+        }
+        h3 {
+            text-shadow: #ccc 1px 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid main bg-dark min-vh-100">
+        <div class="row section-1 bg-info min-vh-100">
+
+            <!-- Contenido de la sección 1 -->
+            <div class="col-xl-3 bg-black imgs-colums" id="img-1">
+                <h3>Work</h3>
+            </div>
+
+            <div class="col-xl-3 bg-danger imgs-colums" id="img-2">
+                <h3>MentorShip</h3>
+            </div>
+
+            <div class="col-xl-3 bg-info imgs-colums" id="img-3">
+                <h3>Store</h3>
+            </div>
+
+            <div class="col-xl-3 bg-warning imgs-colums" id="img-4">
+                <h3>Info</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".imgs-colums");
+
+            images.forEach((img) => {
+                img.addEventListener("mouseenter", function () {
+                    images.forEach((otherImg) => {
+                        if (otherImg !== img) {
+                            otherImg.classList.add("img-opaque");
+                        }
+                    });
+                });
+
+                img.addEventListener("mouseleave", function () {
+                    images.forEach((otherImg) => {
+                        if (otherImg !== img) {
+                            otherImg.classList.remove("img-opaque");
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
