@@ -17,7 +17,6 @@
 
         .imgs-colums {
             background-position: center;
-            background-size: cover;
             background-repeat: no-repeat;
             display: flex;
             justify-content: center;
@@ -25,12 +24,13 @@
             color: rgba(245, 245, 245, 0.828);
             padding-bottom: 65px;
             user-select: none;
-
+            background-size: 117%;
+            transition: background-size .7s ease-in-out;
+            -webkit-transition: background-size .7s ease-in-out;
         }
 
         .imgs-colums:hover {
-
-            background-size: 118%;
+            background-size: 123%;
             cursor: pointer;
         }
 
@@ -58,6 +58,7 @@
         .img-opaque {
             opacity: 0.5;
         }
+
         h3 {
             text-shadow: #ccc 1px 0 10px;
         }
@@ -91,7 +92,7 @@
     </div>
 
 
-    
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
