@@ -24,13 +24,14 @@
             color: rgba(245, 245, 245, 0.828);
             padding-bottom: 65px;
             user-select: none;
-            background-size: 117%;
-            transition: background-size .7s ease-in-out;
-            -webkit-transition: background-size .7s ease-in-out;
+            background-size: cover;
+            
+            /* transition: background-size .5s ease-in-out;
+            -webkit-transition: background-size .5s ease-in-out; */
         }
 
         .imgs-colums:hover {
-            background-size: 123%;
+            background-size: 120%;
             cursor: pointer;
         }
 
@@ -67,23 +68,51 @@
 
 <body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ml-auto d-flex justify-content-around align-content-end">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="container-fluid main bg-dark min-vh-100">
-        <div class="row section-1 bg-info min-vh-100">
+        <div class="row section-1">
 
             <!-- Contenido de la sección 1 -->
-            <div class="col-sm-3 bg-black imgs-colums" id="img-1">
+            <div class="col-sm-3 imgs-colums img-fluid" id="img-1">
                 <h3>Work</h3>
             </div>
 
-            <div class="col-sm-3 bg-danger imgs-colums" id="img-2">
+            <div class="col-sm-3 imgs-colums" id="img-2">
                 <h3>MentorShip</h3>
             </div>
 
-            <div class="col-sm-3 bg-info imgs-colums" id="img-3">
+            <div class="col-sm-3 imgs-colums" id="img-3">
                 <h3>Store</h3>
             </div>
 
-            <div class="col-sm-3 bg-warning imgs-colums" id="img-4">
+            <div class="col-sm-3  imgs-colums" id="img-4">
                 <h3>Info</h3>
             </div>
 
