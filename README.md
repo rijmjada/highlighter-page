@@ -1,4 +1,4 @@
-<p align="center"><h2> Highlighter & PDF <span style="font-size: 40px;">📝🔍</span> </h2></p>
+<h2 align="center">Highlighter & PDF <span style="font-size: 40px;">📝🔍</span> </h2>
 
 <p align="center">
   <img src="https://github.com/rijmjada/highlighter-page/blob/master/resource/logo-circle.png" alt="Logo" style="width: 150px;">
