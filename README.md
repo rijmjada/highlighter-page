@@ -1,6 +1,8 @@
 # Highlighter & PDF 📝🔍
 
-<img src="https://github.com/rijmjada/highlighter-page/blob/master/resource/logo-circle.png" alt="Logo" style="width: 120px;">
+<p align="center">
+  <img src="https://github.com/rijmjada/highlighter-page/blob/master/resource/logo-circle.png" alt="Logo" style="width: 120px;">
+</p>
 
 ## Resaltar, Editar y Descargar en PDF
 
